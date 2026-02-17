@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/badjeff
     # - name: sekigon-gonnoc  # <-- PAW3222
     #   url-base: https://github.com/sekigon-gonnoc
-    - name: caksoylar  # <-- RGB LED
-      url-base: https://github.com/caksoylar  
+    - name: myfork  # <-- RGB LED
+      url-base: https://github.com/KaiharaJP  
     - name: zettaface  # <-- Input Processor Keybind
       url-base: https://github.com/zettaface
   projects:
@@ -24,7 +24,7 @@ manifest:
     #   remote: sekigon-gonnoc
     #   revision: main
     - name: zmk-rgbled-widget
-      remote: caksoylar
+      remote: myfork
       revision: main
     - name: zmk-input-processor-keybind
       remote: zettaface
