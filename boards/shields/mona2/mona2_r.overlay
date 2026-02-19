@@ -92,9 +92,9 @@
 
 &zip_temp_layer {
     excluded-positions = <
-        23  // J (MB1)
-        24  // K (MB3)
-        25  // L (MB2)
+        17  // J (MB1)
+        18  // K (MB3)
+        19  // L (MB2)
         29  // N (MB4) - JKLの次の行、同列関係を目安に調整
         31  // . (MB5)
     >;
