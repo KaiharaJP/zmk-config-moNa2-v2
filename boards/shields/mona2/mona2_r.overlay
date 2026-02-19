@@ -74,7 +74,9 @@
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
-    input-processors = <&zip_temp_layer 5 10000>;
+    input-processors = 
+        <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,  //Y軸反転
+        <&zip_temp_layer 5 10000>;
 
     scroller {
         layers = <3>;
@@ -89,11 +91,13 @@
 };
 
 &zip_temp_layer {
+    // 右半側はcol-offsetのためローカル位置(0-19)が使われる可能性あり
+    // 両方のパターンを試す場合は、まずローカル位置を設定
     excluded-positions = <
-        18  // J (MB1)
-        19  // K (MB3)
-        20  // L (MB2)
-        28  // N (MB4)
-        30  // . (MB5)
+        7   // J (MB1) - ローカル: Row1 Col2
+        8   // K (MB3) - ローカル: Row1 Col3
+        9   // L (MB2) - ローカル: Row1 Col4
+        11  // N (MB4) - ローカル: Row2 Col1
+        14  // . (MB5) - ローカル: Row2 Col4
     >;
 };
