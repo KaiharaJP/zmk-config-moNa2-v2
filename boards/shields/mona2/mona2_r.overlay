@@ -74,6 +74,7 @@
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
+    input-processors = <&zip_temp_layer 5 10000>;
 
     scroller {
         layers = <3>;
@@ -85,4 +86,14 @@
             <&zip_scroll_scaler 1 5>;                           //スクロール量を1/4倍
     };
 
+};
+
+&zip_temp_layer {
+    excluded-positions = <
+        18  // J (MB1)
+        19  // K (MB3)
+        20  // L (MB2)
+        28  // N (MB4)
+        30  // . (MB5)
+    >;
 };
