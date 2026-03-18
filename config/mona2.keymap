@@ -160,10 +160,10 @@
 
         layer_8 {
             bindings = <
-&kp PAGE_UP  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp PAGE_DOWN                    &trans  &trans              &kp LC(UP_ARROW)    &trans               &trans
-&kp HOME     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans  &trans  &kp LC(LEFT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(RIGHT_ARROW)  &trans
-&trans       &trans           &trans          &trans           &trans         &trans    &trans  &trans  &trans              &trans              &trans               &trans
-&trans       &trans           &trans          &trans           &trans         &trans    &trans  &trans                                                               &trans
+&kp PAGE_UP  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &kp PAGE_DOWN                                      &kp LC(UP_ARROW)  &kp LC(LEFT_ARROW)          &kp LC(RA(F))  &kp LC(RIGHT_ARROW)          &kp LC(DOWN_ARROW)
+&kp HOME     &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                                    &trans  &trans            &kp LC(RA(LEFT_ARROW))      &kp LC(RA(V))  &kp LC(RA(RIGHT_ARROW))      &trans
+&trans       &trans           &kp LG(M)       &trans           &trans         &kp LG(LS(LC(NUMBER_4)))    &trans  &trans            &kp RA(LC(LG(LEFT_ARROW)))  &kp LG(M)      &kp RA(LC(LG(RIGHT_ARROW)))  &trans
+&trans       &trans           &trans          &trans           &trans         &trans                      &trans  &trans                                                                                    &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
