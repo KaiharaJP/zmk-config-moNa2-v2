@@ -86,13 +86,6 @@
             tap-ms = <20>;
         };
 
-        ball_as_arrows: ball_as_arrows {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp LEFT_ARROW>, <&kp RIGHT_ARROW>;
-
-            tap-ms = <20>;
-        };
     };
 
     keymap {
@@ -174,7 +167,7 @@
 &kp LEFT_CONTROL  &trans           &trans          &trans           &trans         &trans                      &trans  &trans                                                         &trans
             >;
 
-            sensor-bindings = <&ball_as_arrows>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_9 {
